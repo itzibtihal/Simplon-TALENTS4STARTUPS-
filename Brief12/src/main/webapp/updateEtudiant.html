@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>update Etudiant</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    
+</head>
+<body>
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+        <a class="navbar-brand">Gestion Des Etudiant</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"></button>         
+    </div>
+</nav>
+ <div class="container">
+        <hr>
+        <h2>update</h2>
+
+        <form action="#" th:action="@{/}" th:object="${}" method="POST">
+
+            <input type="hidden" th:field="*{id}" />
+            
+            <input type="text" th:field="*{nom}"  class="form-control mb-4 col-4">
+
+            <input type="text" th:field="*{prenom}"  class="form-control mb-4 col-4">
+
+            <input type="text" th:field="*{classEtudiant}"  class="form-control mb-4 col-4">
+            
+            <input type="text" th:field="*{nbHoraire}" class="form-control mb-4 col-4">
+            
+            <input type="text" th:field="*{cours}" class="form-control mb-4 col-4">
+            
+
+            <button type="submit" class="btn btn-info col-2"> Update</button>
+            
+        </form>
+
+        <hr>
+
+       <a  th:href="@{/}" href="listEtudiant.html" type="button" class="btn btn-outline-info btn-right"><i class="bi bi-backspace-fill"></i> Back</a>
+    </div>
+
+</body>
+</html>

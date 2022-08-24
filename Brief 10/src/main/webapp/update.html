@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>update Employe</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    
+</head>
+<body>
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+        <a class="navbar-brand">Gestion Des Employe</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"></button>         
+    </div>
+</nav>
+ <div class="container">
+        <hr>
+        <h2>update</h2>
+
+        <form action="#" th:action="@{/EmployeController}" th:object="${employe}" method="POST">
+            <input type="text" th:field="*{prenom}" placeholder="Enter Prenom" class="form-control mb-4 col-4">
+
+            <input type="text" th:field="*{nom}" placeholder="Enter Nom" class="form-control mb-4 col-4">
+
+            <input type="text" th:field="*{salaire}" placeholder="Enter Prenom" class="form-control mb-4 col-4">
+
+            <input type="text" th:field="*{post}" placeholder="Enter Post" class="form-control mb-4 col-4">
+
+            <input type="text" th:field="*{typeCont}" placeholder=" Enter Type de contrat" class="form-control mb-4 col-4">
+            
+            <button type="submit" class="btn btn-info col-2"> <i class="bi bi-pencil-square"></i> update</button>
+        </form>
+
+        <hr>
+
+       <a href="EmployeList.html" type="button" class="btn btn-outline-info btn-right"><i class="bi bi-backspace-fill"></i> Back</a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Employe List</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+        <a class="navbar-brand">Gestion Des Employe</a>
+           <button class="navbar-toggler" type="button" data-toggle="collapse"></button>         
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                 <ul class="navbar-nav ml-auto">
+                     <li class="nav-item active">
+                        <a class="nav-link" href="#"><i class="bi bi-house-fill"></i> Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                      </li>
+                            <li class="nav-item">
+                               <a class="nav-link" href="login.html">Sing out <i class="bi bi-box-arrow-right"></i></a>
+                            </li>
+                      </ul>
+               </div>
+          </div>
+</nav>
+
+
+<h3 class="text-center">List Des Employe</h3>
+
+
+
+<div class = "container">
+     <a href ="Add.html" class="btn btn-primary btn-sm mb-3" ><i class="bi bi-plus-circle"></i> Add  Employe </a>
+<form action="EmployeController"  method="POST">
+  <div class = "row">
+  
+    <table class = "table table-bordered table-striped">
+     <thead>
+        <tr>
+             <th class="text-center" scope="col">#</th>
+             <th class="text-center">Nom</th>
+             <th class="text-center">Prenom</th>
+             <th class="text-center">Salaire</th>
+             <th class="text-center">Post</th>
+             <th class="text-center">TypeContrat</th>
+             <th scope="col" class="text-center">Action</th>
+       </tr>
+      </thead>
+     <tbody>
+     
+           <tr th:each="Employe : ${Employes}">
+     
+		      <th scope="row">1</th>
+		      <td th:text="${Employe.nom}"></td>
+		      <td th:text="${Employee.prenom}"></td>
+		      <td th:text="${Employee.salaire}"></td>
+		      <td th:text="${Employee.post}"></td>
+		      <td th:text="${Employee.typeCont}"></td>
+		      
+           <td> 
+              <a th:href="@{//{id}(id=${employe.id})}" href="update.html" class="btn btn-sm btn-success"><i class="bi bi-pencil-square"></i></a>
+              <a th:href="@{//{id}(id=${employe.id})}" href="" class="btn btn-sm btn-danger"><i class="bi bi-trash-fill"></i></a>
+              <a href="" class="btn btn-sm btn-info"><i class="bi bi-person-lines-fill"></i></a>
+           </td>
+     
+         </tr>
+       </tbody>
+     </table>
+   </div>
+ </form>
+</div>
+
+</body>
+</html>

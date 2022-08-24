@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="559.0" prefWidth="768.0" style="-fx-background-color: #e0cda9;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.nawan.MainController">
+   <children>
+      <VBox layoutX="26.0" layoutY="118.0" prefHeight="280.0" prefWidth="280.0">
+         <children>
+            <Label text="Nom">
+               <font>
+                  <Font name="Monospaced Bold" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </Label>
+            <Label layoutX="10.0" layoutY="110.0" text="Prenom">
+               <font>
+                  <Font name="Monospaced Bold" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </Label>
+            <Label layoutX="10.0" layoutY="149.0" text="Nom d'utilisateur">
+               <font>
+                  <Font name="Monospaced Bold" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </Label>
+            <Label layoutX="10.0" layoutY="228.0" text="Mot de passe">
+               <font>
+                  <Font name="Monospaced Bold" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <VBox fx:id="btnjeminscris" layoutX="315.0" layoutY="117.0" prefHeight="362.0" prefWidth="308.0">
+         <children>
+            <TextField fx:id="txtfieldnom" prefHeight="30.0" prefWidth="190.0" promptText="Entrez votre nom">
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="txtfieldprenom" prefHeight="30.0" prefWidth="190.0" promptText="Entrez votre prenom">
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="txtfieldnomutilisateur" layoutX="10.0" layoutY="256.0" prefHeight="30.0" prefWidth="190.0" promptText="Entrez votre nom d'utilisateur">
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="txtfieldmotdepasse" prefHeight="30.0" prefWidth="190.0" promptText="Entrez votre mot de passe">
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </TextField>
+            <Button mnemonicParsing="false" onAction="#btnjeminscris" prefHeight="60.0" prefWidth="306.0" text="Je m'inscris">
+               <font>
+                  <Font name="Monospaced Bold" size="32.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <Label alignment="CENTER" layoutX="21.0" layoutY="5.0" prefHeight="56.0" prefWidth="727.0" text="INSCRIPTION">
+         <font>
+            <Font name="Monospaced Bold" size="55.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="103.0" fitWidth="113.0" layoutX="14.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="103.0" fitWidth="147.0" layoutX="10.0" layoutY="10.0">
+         <image>
+            <Image url="@registered.png" />
+         </image>
+      </ImageView>
+     <!-- <ImageView fitHeight="96.0" fitWidth="102.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="registered.png" />
+         </image>
+      </ImageView>-->
+   </children>
+</AnchorPane>

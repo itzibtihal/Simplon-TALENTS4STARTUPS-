@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Add Etudiant</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+        <a class="navbar-brand">Gestion Des Etudiant</a>         
+    </div>
+</nav>
+    <div class="container">
+       
+        <hr>
+        <h2>Save Etudiant</h2>
+
+        <form action="#" th:action="@{/}" th:object="${}" method="POST">
+        
+            <input type="text" th:field="*{nom}" placeholder="Enter Etudiant name" class="form-control mb-4 col-4">
+
+            <input type="text" th:field="*{prenom}" placeholder="Enter Etudiant prenom" class="form-control mb-4 col-4">
+
+            <input type="text" th:field="*{classEtudiant}" placeholder="Enter Etudiant class" class="form-control mb-4 col-4">
+            
+            <input type="text" th:field="*{nbHoraire}" placeholder="Enter Nb horaire" class="form-control mb-4 col-4">
+            
+            <input type="text" th:field="*{cours}" placeholder="Enter Etudiant cours" class="form-control mb-4 col-4">
+            
+
+            <button type="submit" class="btn btn-info col-2"> Save Etudiant</button>
+            
+        </form>
+
+        <hr>
+         <a th:href="@{/}" href="listEtudiant.html" type="button" class="btn btn-outline-info btn-right"><i class="bi bi-backspace-fill"></i> Back</a>
+       
+    </div>
+</body>
+
+</html>

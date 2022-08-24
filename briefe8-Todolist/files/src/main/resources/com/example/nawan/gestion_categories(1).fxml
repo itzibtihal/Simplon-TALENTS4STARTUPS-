@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="482.0" prefWidth="794.0" style="-fx-background-color: #e0cda9;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.nawan.MainController">
+   <children>
+      <VBox layoutX="15.0" layoutY="81.0" prefHeight="200.0" prefWidth="110.0">
+         <children>
+            <Label text="ID">
+               <font>
+                  <Font name="Monospaced Bold" size="32.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Nom ">
+               <font>
+                  <Font name="Monospaced Bold" size="32.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="125.0" layoutY="81.0" prefHeight="200.0" prefWidth="190.0">
+         <children>
+            <TextField fx:id="idcat" prefHeight="46.0" prefWidth="110.0">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="nom" prefHeight="46.0" prefWidth="110.0">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </TextField>
+         </children>
+      </VBox>
+      <TableView fx:id="tableCategorie" layoutX="359.0" layoutY="81.0" onMouseClicked="#handleAction" prefHeight="214.0" prefWidth="436.0">
+        <columns>
+          <TableColumn fx:id="colidcategorie" prefWidth="75.0" text="Id Categorie" />
+          <TableColumn fx:id="colnomcategorie" prefWidth="360.0000305175781" text="Nom Categorie" />
+        </columns>
+      </TableView>
+      <HBox layoutX="40.0" layoutY="336.0" prefHeight="131.0" prefWidth="731.0">
+         <children>
+            <Button fx:id="btnajouter" mnemonicParsing="false" onAction="#btnajouter" prefHeight="58.0" prefWidth="134.0" text="Ajouter">
+               <HBox.margin>
+                  <Insets left="10.0" top="40.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="20.0" left="30.0" right="20.0" top="20.0" />
+               </padding>
+               <font>
+                  <Font name="Monospaced Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnmodifier" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnmodifier" prefHeight="58.0" prefWidth="134.0" text="Modifer">
+               <HBox.margin>
+                  <Insets left="10.0" top="40.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="20.0" left="30.0" right="20.0" top="20.0" />
+               </padding>
+               <font>
+                  <Font name="Monospaced Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnsupprimer" layoutX="62.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnsupprimer" prefHeight="58.0" prefWidth="134.0" text="Supprimer">
+               <HBox.margin>
+                  <Insets left="10.0" top="40.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="20.0" left="30.0" right="20.0" top="20.0" />
+               </padding>
+               <font>
+                  <Font name="Monospaced Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnlister" layoutX="114.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnlister" prefHeight="58.0" prefWidth="134.0" text="Lister">
+               <HBox.margin>
+                  <Insets left="10.0" top="40.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="20.0" left="30.0" right="20.0" top="20.0" />
+               </padding>
+               <font>
+                  <Font name="Monospaced Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnquitter" layoutX="166.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnquitter" prefHeight="58.0" prefWidth="134.0" text="Quitter">
+               <HBox.margin>
+                  <Insets left="10.0" top="40.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="20.0" left="30.0" right="20.0" top="20.0" />
+               </padding>
+               <font>
+                  <Font name="Monospaced Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
