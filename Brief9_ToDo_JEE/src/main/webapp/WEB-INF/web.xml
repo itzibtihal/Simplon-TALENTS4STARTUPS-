@@ -1,0 +1,164 @@
+<<<<<<< HEAD
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="5.0">
+  <display-name>brief_JEE</display-name>
+  <servlet>
+  <description>
+  
+  </description>
+    <description></description>
+    <display-name>User_Servlet</display-name>
+    <servlet-name>User_Servlet</servlet-name>
+    <servlet-class>servlet.User_Servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>User_Servlet</servlet-name>
+    <url-pattern>/User_Servlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>User_Signup_Servlet</display-name>
+    <servlet-name>User_Signup_Servlet</servlet-name>
+    <servlet-class>servlet.User_Signup_Servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>User_Signup_Servlet</servlet-name>
+    <url-pattern>/User_Signup_Servlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>User_signin_Servlet</display-name>
+    <servlet-name>User_signin_Servlet</servlet-name>
+    <servlet-class>servlet.User_signin_Servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>User_signin_Servlet</servlet-name>
+    <url-pattern>/User_signin_Servlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>task_insert_servlet</display-name>
+    <servlet-name>task_insert_servlet</servlet-name>
+    <servlet-class>servlet.task_insert_servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>task_insert_servlet</servlet-name>
+    <url-pattern>/task_insert_servlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>task_select_servlet</display-name>
+    <servlet-name>task_select_servlet</servlet-name>
+    <servlet-class>servlet.task_select_servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>task_select_servlet</servlet-name>
+    <url-pattern>/task_select_servlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>task_update_servlet</display-name>
+    <servlet-name>task_update_servlet</servlet-name>
+    <servlet-class>servlet.task_update_servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>task_update_servlet</servlet-name>
+    <url-pattern>/task_update_servlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>task_delete_servlet</display-name>
+    <servlet-name>task_delete_servlet</servlet-name>
+    <servlet-class>servlet.task_delete_servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>task_delete_servlet</servlet-name>
+    <url-pattern>/task_delete_servlet</url-pattern>
+  </servlet-mapping>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="5.0">
+  <display-name>brief_JEE</display-name>
+  <servlet>
+  <description>
+  
+  </description>
+    <description></description>
+    <display-name>User_Servlet</display-name>
+    <servlet-name>User_Servlet</servlet-name>
+    <servlet-class>servlet.User_Servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>User_Servlet</servlet-name>
+    <url-pattern>/User_Servlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>User_Signup_Servlet</display-name>
+    <servlet-name>User_Signup_Servlet</servlet-name>
+    <servlet-class>servlet.User_Signup_Servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>User_Signup_Servlet</servlet-name>
+    <url-pattern>/User_Signup_Servlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>User_signin_Servlet</display-name>
+    <servlet-name>User_signin_Servlet</servlet-name>
+    <servlet-class>servlet.User_signin_Servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>User_signin_Servlet</servlet-name>
+    <url-pattern>/User_signin_Servlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>task_insert_servlet</display-name>
+    <servlet-name>task_insert_servlet</servlet-name>
+    <servlet-class>servlet.task_insert_servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>task_insert_servlet</servlet-name>
+    <url-pattern>/task_insert_servlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>task_select_servlet</display-name>
+    <servlet-name>task_select_servlet</servlet-name>
+    <servlet-class>servlet.task_select_servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>task_select_servlet</servlet-name>
+    <url-pattern>/task_select_servlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>task_update_servlet</display-name>
+    <servlet-name>task_update_servlet</servlet-name>
+    <servlet-class>servlet.task_update_servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>task_update_servlet</servlet-name>
+    <url-pattern>/task_update_servlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>task_delete_servlet</display-name>
+    <servlet-name>task_delete_servlet</servlet-name>
+    <servlet-class>servlet.task_delete_servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>task_delete_servlet</servlet-name>
+    <url-pattern>/task_delete_servlet</url-pattern>
+  </servlet-mapping>
+>>>>>>> fbf558e1d5a02f2cb34c27c924b1e54a4f44962a
+</web-app>
