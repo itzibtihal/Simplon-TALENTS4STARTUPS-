@@ -1,0 +1,36 @@
+{   "passenger":[ 
+    {
+        "id":"1",
+        "nom":"anass",
+        "prenom":"makhlofi",
+        "email":"anass@gmail.com",
+        "telephone":"0678376363",
+        "password":"anass2323",
+        "cin":"aw97w2",
+        "passport":"ABCD1234",
+        "nationalite":"marocaine"
+    },
+    {
+        "id":"2",
+        "nom":"meryem",
+        "prenom":"meloo",
+        "email":"merymeloo@gmail.com",
+        "telephone":"06542728",
+        "password":"merymelo112323",
+        "cin":"lkjld77",
+        "passport":"wnwklww",
+        "nationalite":"francaise"
+    },
+    {
+        "id":"3",
+        "nom":"manal",
+        "prenom":"manal",
+        "email":"manal@gmail.com",
+        "telephone":"064256238",
+        "password":"manalmanalmanal887575",
+        "cin":"jn8373",
+        "passport":"10891nce",
+        "nationalite":"ivoirienne"
+    }
+]
+}
